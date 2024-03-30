@@ -1,0 +1,22 @@
+{
+  "id": 1,
+  "heading": "This is our Website",
+  "banner_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur fugiat beatae repellat maxime aliquam perferendis dolores praesentium quisquam molestiae, delectus aliquid, voluptatem necessitatibus nulla dolore placeat magni incidunt consectetur, reiciendis omnis odio facilis.",
+  "group_image": [
+    {
+      "GrpImage": "/images/groupImg1.jpg"
+    },
+    {
+      "GrpImage": "/images/groupImg2.jpg"
+    },
+    {
+      "GrpImage": "/images/groupImg3.jpg"
+    },
+    {
+      "GrpImage": "/images/groupImg4.jpg"
+    },
+    {
+      "GrpImage": "/images/groupImg5.jpg"
+    }
+  ]
+}

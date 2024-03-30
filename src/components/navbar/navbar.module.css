@@ -1,0 +1,226 @@
+/* ========== Navbar Start ================ */
+.navbar_main {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  /* background-color: #eeedeb; */
+  background-color: #f1eaff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* ---------- Logo Div Start ---------- */
+.logo_div {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo_text {
+  color: rgb(8, 8, 24);
+  font-weight: bold;
+}
+/* ------------ Logo Div End ----------- */
+
+/* ------------- Navbar List Component Start ------------ */
+.navbar_list_wrapper {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+  margin-right: 6px;
+}
+.navbar_list {
+  list-style: none;
+  width: 120px;
+}
+.navbar_link {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.navbar_link:hover {
+  background-color: black;
+  color: white;
+}
+.active1 {
+  background-color: black;
+  color: white;
+}
+/* --------------- Navbar List Component End -------------- */
+
+/* --------- Hamburger Menu Start -------------- */
+.hamburger_menu_icon {
+  display: none;
+  /* width: 39px; */
+  /* width: 35px; */
+  width: 31px;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-left: auto;
+  margin-right: 20px;
+}
+.hamburger_layer {
+  /* background-color: rgb(55, 54, 54); */
+  background-color: rgb(109, 43, 109);
+  /* height: 8%; */
+  height: 7%;
+  width: 100%;
+  border-radius: 20px;
+  margin: 3px 0px;
+  transition: all 1s;
+}
+.hamburger_layer1 {
+  /* background-color: rgb(55, 54, 54); */
+
+  background-color: rgb(109, 43, 109);
+  height: 7%;
+  width: 100%;
+  border-radius: 20px;
+  margin: 3px 0px;
+  transition: all 1s;
+}
+.first_layer_menu {
+  transform: rotate(45deg);
+  /* background-color: rgb(55, 54, 54); */
+  background-color: rgb(109, 43, 109);
+  /* height: 8%; */
+  height: 7%;
+  width: 100%;
+  border-radius: 20px;
+  margin: -5px 0px;
+  margin-top: 0px;
+  transition: all 1s;
+}
+.second_layer_menu {
+  display: none;
+}
+.third_layer_menu {
+  transform: rotate(-45deg);
+  /* background-color: rgb(55, 54, 54); */
+  background-color: rgb(109, 43, 109);
+  /* height: 8%; */
+  height: 7%;
+  width: 100%;
+  border-radius: 20px;
+  margin: 2px 0px;
+  transition: all 1s;
+}
+
+/* --------- Hamburger Menu End -------------- */
+
+/* ---------- Hamburger Menu List Start ---------- */
+.hamburger_navbar_list_hide {
+  display: none;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  position: fixed;
+  top: 50px;
+  right: 0;
+  width: 80%;
+  height: 100vh;
+  /* background-color: rgb(243, 186, 81); */
+
+  /* background-color: #d7c7f8; */
+  background-color: #f1eaff;
+  box-shadow: -5px 6px 15px rgb(161 151 151);
+  padding-top: 100px;
+  transition: all 1s;
+  opacity: 1;
+  z-index: 9999;
+}
+.hamburger_navbar_list_wrapper {
+  display: none;
+  opacity: 0;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  position: fixed;
+  top: 50px;
+  right: -100px;
+  width: 0%;
+  height: 100vh;
+  /* background-color: rgb(243, 186, 81); */
+  background-color: #d7c7f8;
+  padding-top: 100px;
+  transition: all 1s;
+  z-index: 9999;
+}
+.hamburger_navbar_list {
+  list-style: none;
+  width: 100%;
+  height: 50px;
+}
+.hamburger_navbar_link {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+}
+/* ---------- Hamburger Menu List End ---------- */
+
+/* ========== Navbar End ================ */
+
+/* ============== Tablets and Desktop ============= */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* tablets and desktop */
+  /* --------- Logo Div Start ----------- */
+  .logo_div {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+  }
+  /* ------------ Logo Div End ----------- */
+}
+
+/* ============== Phone ================ */
+@media only screen and (max-width: 767px) {
+  /* phones */
+
+  /* --------- Logo Div Start ----------- */
+  .logo_div {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+  /* ------------ Logo Div End ----------- */
+
+  .navbar_list_wrapper {
+    display: none;
+  }
+
+  /* --------- Hamburger Menu Start -------------- */
+  .hamburger_menu_icon {
+    display: flex;
+  }
+  /* --------- Hamburger Menu End -------------- */
+
+  /* ----------- Hamburger Menu List Start ---------- */
+  .hamburger_navbar_list_wrapper {
+    display: flex;
+  }
+  .hamburger_navbar_list_hide {
+    display: flex;
+  }
+  /* ----------- Hamburger Menu List End ---------- */
+}
