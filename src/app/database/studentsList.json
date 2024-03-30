@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Tom Harday",
+    "name": "Tom Hardy",
     "branch": "CSE",
     "date_of_birth": "11th December",
     "city": "New York",
@@ -51,7 +51,7 @@
   },
   {
     "id": 3,
-    "name": "Chris Patt",
+    "name": "Chris Pratt",
     "branch": "CSE",
     "date_of_birth": "3rd March",
     "city": "New York",
@@ -101,7 +101,7 @@
   },
   {
     "id": 5,
-    "name": "Harry Poter",
+    "name": "Harry Potter",
     "branch": "CSE",
     "date_of_birth": "11th December",
     "city": "New York",
